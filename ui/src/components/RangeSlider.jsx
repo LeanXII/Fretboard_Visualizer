@@ -6,7 +6,8 @@ function valuetext(value) {
 
 export default function RangeSlider({ fretRange, setFretRange }) {
   const handleChange = (newValue) => {
-    setFretRange(newValue);
+   
+    setFretRange(newValue.target.value);
   };
 
   return (

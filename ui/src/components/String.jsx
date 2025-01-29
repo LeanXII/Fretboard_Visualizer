@@ -10,7 +10,7 @@ const String = ({ string, strings, fretRange, scale }) => {
     );
 
     setNewScale(scale.slice(openIndex, openIndex + fretRange[1] + 1));
-  }, [string, strings, scale]);
+  }, [string, strings, scale, fretRange]);
 
   return (
     <div className="flex w-full min-w-[1405px] h-full">
